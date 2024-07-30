@@ -1,5 +1,5 @@
 {
-    "name": "xhees/page",
+    "name": "php94/page",
     "title": "单页系统",
     "description": "支持自定义单页",
     "license": "GPL-3.0",
@@ -9,7 +9,7 @@
     },
     "autoload": {
         "psr-4": {
-            "App\\Xhees\\Page\\": "src/library/"
+            "App\\Php94\\Page\\": "src/library/"
         }
     }
 }

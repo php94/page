@@ -5,8 +5,8 @@ use PHP94\Help\Package;
 return [
     'install' => function () {
         $sql = <<<'str'
-DROP TABLE IF EXISTS `prefix_xhees_page`;
-CREATE TABLE `prefix_xhees_page` (
+DROP TABLE IF EXISTS `prefix_php94_page`;
+CREATE TABLE `prefix_php94_page` (
     `id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT 'ID',
     `page` varchar(255) NOT NULL DEFAULT '' COMMENT '页面',
     `tips` varchar(255) NOT NULL DEFAULT '' COMMENT '备注',
@@ -19,7 +19,7 @@ str;
     },
     'unInstall' => function () {
         $sql = <<<'str'
-DROP TABLE IF EXISTS `prefix_xhees_page`;
+DROP TABLE IF EXISTS `prefix_php94_page`;
 str;
         Package::execSql($sql);
     },

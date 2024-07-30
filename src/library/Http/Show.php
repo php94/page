@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Xhees\Page\Http;
+namespace App\Php94\Page\Http;
 
 use PHP94\Facade\Db;
 use PHP94\Facade\Framework;
@@ -33,7 +33,7 @@ class Show implements RequestHandlerInterface
 
     public function get()
     {
-        if (!$page = Db::get('xhees_page', '*', [
+        if (!$page = Db::get('php94_page', '*', [
             'state' => 1,
             'id' => Request::get('id'),
         ])) {

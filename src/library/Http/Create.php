@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Xhees\Page\Http;
+namespace App\Php94\Page\Http;
 
 use App\Php94\Admin\Http\Common;
 use PHP94\Facade\Db;
@@ -33,7 +33,7 @@ class Create extends Common
 
     public function post()
     {
-        Db::insert('xhees_page', [
+        Db::insert('php94_page', [
             'page' => Request::post('page'),
             'tpl' => Request::post('tpl'),
             'state' => Request::post('state', 1),

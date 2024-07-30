@@ -1,6 +1,6 @@
 <?php
 
-use App\Xhees\Page\Http\Index;
+use App\Php94\Page\Http\Index;
 
 return [
     'menus' => [[

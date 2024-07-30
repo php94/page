@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Xhees\Page\Http;
+namespace App\Php94\Page\Http;
 
 use App\Php94\Admin\Http\Common;
 use PHP94\Facade\Db;
@@ -21,7 +21,7 @@ class Update extends Common
 {
     public function get()
     {
-        $page = Db::get('xhees_page', '*', [
+        $page = Db::get('php94_page', '*', [
             'id' => Request::get('id'),
         ]);
         $form = new Form('编辑页面');
@@ -40,7 +40,7 @@ class Update extends Common
 
     public function post()
     {
-        $page = Db::get('xhees_page', '*', [
+        $page = Db::get('php94_page', '*', [
             'id' => Request::post('id'),
         ]);
 
@@ -51,7 +51,7 @@ class Update extends Common
             'tips' => '',
         ]);
 
-        Db::update('xhees_page', $update, [
+        Db::update('php94_page', $update, [
             'id' => $page['id'],
         ]);
 

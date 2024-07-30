@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Xhees\Page\Http;
+namespace App\Php94\Page\Http;
 
 use App\Php94\Admin\Http\Common;
 use PHP94\Facade\Db;
@@ -13,7 +13,7 @@ class Delete extends Common
 {
     public function get()
     {
-        Db::delete('xhees_page', [
+        Db::delete('php94_page', [
             'id' => Request::get('id'),
         ]);
         return Response::success('操作成功！');
