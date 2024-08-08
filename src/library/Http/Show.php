@@ -4,12 +4,12 @@ declare(strict_types=1);
 
 namespace App\Php94\Page\Http;
 
-use PHP94\Facade\Db;
-use PHP94\Facade\Framework;
-use PHP94\Help\Request;
-use PHP94\Facade\Router;
-use PHP94\Facade\Template;
-use PHP94\Help\Response;
+use PHP94\Db;
+use PHP94\Framework;
+use PHP94\Request;
+use PHP94\Router;
+use PHP94\Template;
+use PHP94\Response;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Server\RequestHandlerInterface;
