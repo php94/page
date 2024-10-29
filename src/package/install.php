@@ -2,9 +2,7 @@
 
 use PHP94\Package;
 
-return [
-    'install' => function () {
-        $sql = <<<'str'
+$sql = <<<'str'
 DROP TABLE IF EXISTS `prefix_php94_page`;
 CREATE TABLE `prefix_php94_page` (
     `id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT 'ID',
@@ -15,14 +13,5 @@ CREATE TABLE `prefix_php94_page` (
     PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=COMPACT;
 str;
-        Package::execSql($sql);
-    },
-    'unInstall' => function () {
-        $sql = <<<'str'
-DROP TABLE IF EXISTS `prefix_php94_page`;
-str;
-        Package::execSql($sql);
-    },
-    'update' => function () {
-    },
-];
+
+Package::execSql($sql);
